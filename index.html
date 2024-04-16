@@ -4,29 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mailer</title>
-  </head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-  <style>
-    td img {
-      max-width: 600px;
-      height: auto;
-    }
-  </style>
+      table {
+        width: 100%;
+        text-align: center; /* Center align the table content */
+      }
+
+      td {
+        padding: 10px; /* Add some padding for spacing */
+      }
+
+      td img {
+        max-width: 600px;
+        height: auto;
+        display: block; /* Ensure images are centered within their cells */
+        margin: 0 auto; /* Center align the images within their cells */
+      }
+    </style>
+  </head>
   <body>
-    <div class="img">
-      <table style="display: flex">
-        <tbody>
-          <tr style="display: flex; flex-direction: column">
-            <td><img src="./img/1.png" alt="" /></td>
-            <td>
-              <a href="https://treeofliferesorts.com/"
-                ><img src="./img/2.png" alt=""
-              /></a>
-            </td>
-            <td><img src="./img/3.png" alt="" /></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <table>
+      <tbody>
+        <tr>
+          <td><img src="./img/1.png" alt="" /></td>
+          <td>
+            <a href="https://treeofliferesorts.com/"
+              ><img src="./img/2.png" alt=""
+            /></a>
+          </td>
+          <td><img src="./img/3.png" alt="" /></td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
